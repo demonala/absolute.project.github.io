@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="id"> <head>
+<html lang="id">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Absolute_project - Chrono Echoes: Papar's Legacy</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@400;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header id="main-header">
@@ -56,22 +57,22 @@
                 <h2><i class="fas fa-users"></i> Para Karakter</h2>
                 <div class="character-grid">
                     <div class="character-card">
-                        <img src="assets/images/kai_raya_pixel.png" alt="Kai/Raya - Protagonis" class="character-img placeholder-img">
-                        <h3>Kai (MC)</h3>
+                        <img src="kai_raya_pixel.png" alt="Kai/Raya - Protagonis" class="character-img placeholder-img" loading="lazy">
+                        <h3>Kai / Raya (MC)</h3>
                         <p>Anggota muda dan berbakat dari Absolute Immortal. Lincah, pemberani, dengan tekad kuat melindungi Papar. Menggunakan senjata energi non-lethal.</p>
                     </div>
                     <div class="character-card">
-                        <img src="assets/images/elder_elara_pixel.png" alt="Elder Elara - NPC" class="character-img placeholder-img">
+                        <img src="elder_elara_pixel.png" alt="Elder Elara - NPC" class="character-img placeholder-img" loading="lazy">
                         <h3>Elder Elara (NPC)</h3>
                         <p>Tetua bijak, mentor bagi Kai/Raya. Sumber informasi, pemberi misi, dan penjaga nilai-nilai luhur Papar. Representasi kebijaksanaan dan kedamaian.</p>
                     </div>
                     <div class="character-card">
-                        <img src="assets/images/jax_pixel.png" alt="Jax - NPC" class="character-img placeholder-img">
+                        <img src="jax_pixel.png" alt="Jax - NPC" class="character-img placeholder-img" loading="lazy">
                         <h3>Jax (NPC)</h3>
                         <p>Teknisi jenius di Absolute Immortal. Ahli dalam teknologi dan upgrade persenjataan. Setia kawan meskipun kadang ceroboh.</p>
                     </div>
                     <div class="character-card">
-                        <img src="assets/images/cipher_pixel.png" alt="Cipher - Villain" class="character-img placeholder-img">
+                        <img src="cipher_pixel.png" alt="Cipher - Villain" class="character-img placeholder-img" loading="lazy">
                         <h3>Cipher (Villain)</h3>
                         <p>Pemimpin misterius Discord Syndicate. Motifnya tersembunyi, mungkin terkait dendam masa lalu atau interpretasi keadilan yang salah.</p>
                     </div>
@@ -128,9 +129,9 @@
                 <p>Kami adalah tim kecil yang bersemangat dari SK Sacred Heart Biau Papar, siap menciptakan game yang membanggakan!</p>
                 <ul>
                     <li><strong>Hendry Rokkean Hery (DVL)</strong> - Konseptor Utama & Programmer</li>
-                    <li>[ Absolute Immortal ] - [Peran, misal: Desainer Pixel Art / Programmer Arduino]</li>
+                    <li>[Absolute Immortal ] - [Peran, misal: Desainer Pixel Art / Programmer Arduino]</li>
                     <li>[Absolute Immortal] - [Peran, misal: Penulis Cerita / Pengembang Level]</li>
-                    <li>Dibimbing oleh: [Cikgu Ajah yang tercinta]</li>
+                    <li>Dibimbing oleh: [Cikgu Siti Noerejah tercinta]</li>
                 </ul>
                 <p><em>"Kami percaya, dengan semangat dan kerjasama, keterbatasan bukanlah halangan untuk berkreasi!"</em></p>
             </div>
@@ -155,7 +156,6 @@
             menuToggle.addEventListener('click', () => {
                 mainNav.classList.toggle('active');
                 menuToggle.classList.toggle('active'); 
-                // Optional: Change icon on toggle
                 const icon = menuToggle.querySelector('i');
                 if (icon.classList.contains('fa-bars')) {
                     icon.classList.remove('fa-bars');
@@ -165,7 +165,6 @@
                     icon.classList.add('fa-bars');
                 }
             });
-            // Close menu when a link is clicked (for single-page navigation)
             document.querySelectorAll('.main-nav a').forEach(link => {
                 link.addEventListener('click', () => {
                     if (mainNav.classList.contains('active')) {
