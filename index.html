@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute_project - Chrono Echoes: Papar's Legacy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@400;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="#hero">Absolute <span class="logo-alt">Immortal</span> Project</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#hero">Beranda</a></li>
+                    <li><a href="#story">Cerita</a></li>
+                    <li><a href="#characters">Karakter</a></li>
+                    <li><a href="#gameplay">Gameplay</a></li>
+                    <li><a href="#visuals">Visual</a></li>
+                    <li><a href="#team">Tim</a></li>
+                </ul>
+            </nav>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section section">
+            <div class="container">
+                <h1 class="game-title">Chrono Echoes</h1>
+                <p class="game-subtitle">Papar's Legacy</p>
+                <p class="team-name">Sebuah Konsep Game oleh: <strong>Absolute Immortal</strong></p>
+                <p class="tagline">"Mengungkap gema waktu demi menyelamatkan kedamaian Papar dari ancaman Discord Syndicate!"</p>
+                <a href="#story" class="btn btn-primary">Jelajahi Konsep <i class="fas fa-arrow-down"></i></a>
+            </div>
+        </section>
+
+        <section id="story" class="story-section section">
+            <div class="container">
+                <h2><i class="fas fa-scroll"></i> Sinopsis Cerita</h2>
+                <div class="story-content">
+                    <p>Papar, 50 tahun di masa depan (sekitar tahun 2075). Setelah melewati masa-masa sulit, Papar kini menjadi wilayah maju secara teknologi namun tetap harmonis dengan alam. Kedamaian ini dijaga oleh artefak kuno, <strong>"Gema Harmoni"</strong>.</p>
+                    <p>Namun, ketenangan terusik ketika organisasi bayangan, <strong>Discord Syndicate</strong> yang dipimpin oleh sosok misterius <strong>"Cipher"</strong>, mencuri Gema Harmoni. Mereka bertujuan mengacaukan tatanan dan mungkin memiliki agenda tersembunyi terkait kekuatan artefak tersebut.</p>
+                    <p>Tim <strong>Absolute Immortal</strong>, penjaga elit warisan Papar, harus segera bertindak. Kamu adalah **Kai/Raya**, anggota termuda mereka, yang mengemban misi berbahaya untuk merebut kembali Gema Harmoni dan memulihkan kedamaian Papar sebelum terlambat.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="characters" class="characters-section section">
+            <div class="container">
+                <h2><i class="fas fa-users"></i> Para Karakter</h2>
+                <div class="character-grid">
+                    <div class="character-card">
+                        <img src="assets/images/kai_raya_pixel.png" alt="Kai/Raya - Protagonis" class="character-img placeholder-img">
+                        <h3>Kai (MC)</h3>
+                        <p>Anggota muda dan berbakat dari Absolute Immortal. Lincah, pemberani, dengan tekad kuat melindungi Papar. Menggunakan senjata energi non-lethal.</p>
+                    </div>
+                    <div class="character-card">
+                        <img src="assets/images/elder_elara_pixel.png" alt="Elder Elara - NPC" class="character-img placeholder-img">
+                        <h3>Elder Elara (NPC)</h3>
+                        <p>Tetua bijak, mentor bagi Kai/Raya. Sumber informasi, pemberi misi, dan penjaga nilai-nilai luhur Papar. Representasi kebijaksanaan dan kedamaian.</p>
+                    </div>
+                    <div class="character-card">
+                        <img src="assets/images/jax_pixel.png" alt="Jax - NPC" class="character-img placeholder-img">
+                        <h3>Jax (NPC)</h3>
+                        <p>Teknisi jenius di Absolute Immortal. Ahli dalam teknologi dan upgrade persenjataan. Setia kawan meskipun kadang ceroboh.</p>
+                    </div>
+                    <div class="character-card">
+                        <img src="assets/images/cipher_pixel.png" alt="Cipher - Villain" class="character-img placeholder-img">
+                        <h3>Cipher (Villain)</h3>
+                        <p>Pemimpin misterius Discord Syndicate. Motifnya tersembunyi, mungkin terkait dendam masa lalu atau interpretasi keadilan yang salah.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gameplay" class="gameplay-section section">
+            <div class="container">
+                <h2><i class="fas fa-gamepad"></i> Fitur Gameplay & Arduino</h2>
+                <div class="gameplay-content">
+                    <h3>Aksi FPS dengan Sentuhan Strategi</h3>
+                    <ul>
+                        <li><strong>Mekanisme Menembak Non-Lethal:</strong> Fokus melumpuhkan lawan dengan senjata energi, bukan membunuh.</li>
+                        <li><strong>Level Bervariasi:</strong> Dari perkotaan futuristik Papar hingga reruntuhan kuno, masing-masing dengan tantangan unik.</li>
+                        <li><strong>Lawan Cerdas (AI Sederhana):</strong> Prajurit Discord Syndicate dengan pola serangan dan taktik berbeda.</li>
+                        <li><strong>Sistem Skor Dinamis:</strong> Dapatkan poin untuk melumpuhkan lawan, kecepatan, dan penyelesaian misi.</li>
+                        <li><strong>Cerita Interaktif:</strong> Disampaikan melalui briefing, dialog singkat, dan mungkin cutscene pixel art.</li>
+                    </ul>
+                    <h3><i class="fas fa-microchip"></i> Integrasi Arduino Uno Inovatif</h3>
+                    <p>Rasakan pengalaman bermain yang lebih imersif! Arduino Uno akan memberikan umpan balik fisik melalui lampu LED:</p>
+                    <ul>
+                        <li><strong>Lampu Hijau <i class="fas fa-lightbulb" style="color: #2ecc71;"></i>:</strong> Menyala saat kamu mendapatkan skor, menyelesaikan objektif, atau saat kondisi menguntungkan.</li>
+                        <li><strong>Lampu Merah <i class="fas fa-lightbulb" style="color: #e74c3c;"></i>:</strong> Berkedip saat kamu terkena serangan, kesehatan rendah, atau saat situasi genting.</li>
+                    </ul>
+                    <p><em>(Detail teknis komunikasi Python-Arduino akan menggunakan library `pyserial`).</em></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="visuals" class="visuals-section section">
+            <div class="container">
+                <h2><i class="fas fa-palette"></i> Estetika Visual: Pixel Art Modern</h2>
+                <div class="visual-content">
+                    <p>Game ini akan memanjakan mata dengan gaya <strong>pixel art yang detail dan modern</strong>. Meskipun retro, kami akan memberikan sentuhan kontemporer:</p>
+                    <ul>
+                        <li><strong>Palet Warna Terpilih:</strong> Kombinasi warna yang kuat dan atmosferik, mungkin dengan nuansa neon untuk teknologi masa depan, dipadukan dengan warna alam Papar.</li>
+                        <li><strong>Animasi Halus:</strong> Gerakan karakter, efek tembakan, dan lingkungan yang hidup.</li>
+                        <li><strong>Desain UI yang Intuitif:</strong> Health bar, skor, dan menu akan dirancang dengan gaya pixel yang konsisten dan mudah dibaca.</li>
+                        <li><strong>Lingkungan Imersif:</strong> Setiap level akan memiliki detail pixel yang kaya, menceritakan kisahnya sendiri.</li>
+                    </ul>
+                    <div class="image-gallery-placeholder">
+                        <p>(Di sini nanti bisa ditaruh beberapa contoh gambar konsep pixel art jika sudah ada)</p>
+                        <div class="gallery-item-placeholder">Konsep Lingkungan</div>
+                        <div class="gallery-item-placeholder">Konsep UI</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="team" class="team-section section">
+            <div class="container">
+                <h2><i class="fas fa-users-cog"></i> Tim Pengembang: Absolute Immortal</h2>
+                <p>Kami adalah tim kecil yang bersemangat dari SK Sacred Heart Biau Papar, siap menciptakan game yang membanggakan!</p>
+                <ul>
+                    <li><strong>Hendry Rokkean Hery (DVL)</strong> - Konseptor Utama & Programmer</li>
+                    <li>[ Absolute Immortal ] - [Peran, misal: Desainer Pixel Art / Programmer Arduino]</li>
+                    <li>[Absolute Immortal] - [Peran, misal: Penulis Cerita / Pengembang Level]</li>
+                    <li>Dibimbing oleh: [Cikgu Ajah yang tercinta]</li>
+                </ul>
+                <p><em>"Kami percaya, dengan semangat dan kerjasama, keterbatasan bukanlah halangan untuk berkreasi!"</em></p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Absolute Immortal. Game concept for Papar Make a Game.</p>
+            <p>Dibuat dengan <i class="fas fa-heart" style="color: #e74c3c;"></i> oleh Hendry Rokkean Hery & Tim.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script for current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Simple script for mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mainNav = document.querySelector('.main-nav ul');
+        if (menuToggle && mainNav) {
+            menuToggle.addEventListener('click', () => {
+                mainNav.classList.toggle('active');
+                menuToggle.classList.toggle('active'); 
+                // Optional: Change icon on toggle
+                const icon = menuToggle.querySelector('i');
+                if (icon.classList.contains('fa-bars')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+            // Close menu when a link is clicked (for single-page navigation)
+            document.querySelectorAll('.main-nav a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (mainNav.classList.contains('active')) {
+                        mainNav.classList.remove('active');
+                        menuToggle.classList.remove('active');
+                        const icon = menuToggle.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            });
+        }
+    </script>
+</body>
+</html>
